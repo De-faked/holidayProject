@@ -3,13 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="holidayProject.css">
     <title>Document</title>
 </head>
 
-<body>
-    <!-- <div class="mainFather"> -->
+<body class="mainBody">
         <div class="childUpper"></div>
         <div class="upperBox">
             <h3>New todo:</h3>
@@ -24,24 +23,35 @@
             <div>
                 <h1>Tasks</h1>
             </div>
+
+            <div class="previousButtomBoxSibling">
+                <div> <h1>hi not hallo but Salam</h1></div>
+            </div>
+
             <div class="buttomBox">
                 <div class="inputButtomBox">Edit <input type="text" placeholder="do the shopping..."> <button
                         class="buttonBottomBox">Save</button></div>
-                <div class="tasksList"><input type="checkbox" name="checkbox"> <h4>cleaning</h4></div>
-                <div class="tasksList"><input type="checkbox" name="checkbox"></div>
-                <div class="tasksList"><input type="checkbox" name="checkbox"></div>
-                <div class="tasksList"><input type="checkbox" name="checkbox"></div>
+
+                <ul>
+                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
+                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
+                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
+                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
+                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
+                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
+                </ul>
+
+
+            </div>
+
+            <div class="nextButtomBoxSibling">
+                <div> <h4>hi not hallo but Salam</h4></div>
             </div>
 
 
         </div>
 
-
-
-
-
-<!-- 
-    </div> -->
+    <script src="jsForTest.js"></script>
 </body>
 
 </html>
