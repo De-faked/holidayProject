@@ -9,49 +9,25 @@
 </head>
 
 <body class="mainBody">
-        <div class="childUpper"></div>
+    <div class="childUpper"></div>
+    <main>
         <div class="upperBox">
-            <h3>New todo:</h3>
-            <div>
-                <input type="text" placeholder="write here">
-                <button class="buttonUpperBox">add</button>
-            </div>
-
+            <h3>ToDo List</h3>
+            <p id="date"></p>
+            <form id="todo-form">
+                <label for="todo-input">Add new work:</label>
+                <input type="text" id="todo-input" name="todo-input">
+                <button class="buttonUpperBox" type="button" onclick="addItem()">Add</button>
+            </form>
         </div>
 
-        <div class="tasksBox">
-            <div>
-                <h1>Tasks</h1>
-            </div>
+        <p id="error-msg"></p>
 
-            <div class="previousButtomBoxSibling">
-                <div> <h1>hi not hallo but Salam</h1></div>
-            </div>
+        <ul id="todo-list">
+        </ul>
+    </main>
 
-            <div class="buttomBox">
-                <div class="inputButtomBox">Edit <input type="text" placeholder="do the shopping..."> <button
-                        class="buttonBottomBox">Save</button></div>
-
-                <ul>
-                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
-                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
-                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
-                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
-                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
-                    <li class="tasksList list1"><input id="checkbox"  type="checkbox" name="checkbox"> <h4></h4> <button class="deleteButton"> <img src="delete-svgrepo-com.svg"></button><button class="writeButton"> <img src="write-svgrepo-com.svg"></button></li>
-                </ul>
-
-
-            </div>
-
-            <div class="nextButtomBoxSibling">
-                <div> <h4>hi not hallo but Salam</h4></div>
-            </div>
-
-
-        </div>
-
-    <script src="jsForTest.js"></script>
+    <script src="toDoList.js"></script>
 </body>
 
 </html>
